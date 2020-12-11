@@ -94,3 +94,12 @@ function retornaPrimeiraPessoaMaiorDeIdade(pessoas) {
 
 console.log(retornaPrimeiraPessoaMaiorDeIdade([fenipe, marilda, jade, reiPrynce]));
 console.log(retornaPrimeiraPessoaMaiorDeIdade([jade, reiPrynce, marilda, fenipe]));
+
+// Atividade 08
+
+function multiplicaArray(numeros) {
+  const reducer = (acumulador, numero) => acumulador * numero;
+  console.log(numeros.reduce(reducer)); 
+}
+
+console.log(multiplicaArray([2, 1, 10, 5]));
