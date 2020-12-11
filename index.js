@@ -102,4 +102,12 @@ function multiplicaArray(numeros) {
   console.log(numeros.reduce(reducer)); 
 }
 
-console.log(multiplicaArray([2, 1, 10, 5]));
+multiplicaArray([2, 1, 10, 5]);
+
+// Atividade 09
+
+const apresentacaoUsuario = (nome, idade) => {
+  console.log(`Olá, eu sou ${nome}, e tenho ${idade} anos`)
+}
+
+apresentacaoUsuario("Maria", 20);
