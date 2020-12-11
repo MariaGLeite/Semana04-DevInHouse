@@ -77,3 +77,11 @@ function retornaNomePessoas(pessoas) {
 }
 
 console.log(retornaNomePessoas([fenipe, marilda, jade, reiPrynce]));
+
+// Atividade 06
+
+function retornaPessoasMenoresDeIdade(pessoas) {
+  return pessoas.filter(pessoa => pessoa.idade < 18);
+}
+
+console.log(retornaPessoasMenoresDeIdade([fenipe, marilda, jade, reiPrynce]));
