@@ -48,7 +48,24 @@ var marilda = {
   nome: "Maria",
   idade: 18,
   telefone: "+55 048 99661-3157",
-  profissao: "Programadora"
+  profissao: "Programador"
 }
 
 console.log(verificaMaiorIdade([reiPrynce, jade, marilda]));
+
+// Atividade 04
+// Considerando a mesma entidade Pessoa do exercício 3: https://trello.com/c/LgeM2xcO crie uma função que receba uma lista de pessoas e descubra se todas as pessoas da lista possuem a profissão “Programador” retornando o resultado.
+
+function verificaTodosProgramadores(pessoas) {
+  return pessoas.filter(pessoa => pessoa.profissao === "Programador").length === pessoas.length;
+}
+
+var fenipe = {
+  nome: "Felipe",
+  idade: 18,
+  telefone: "+55 048 99661-3157",
+  profissao: "Programador"
+}
+
+console.log(verificaTodosProgramadores([jade, marilda]));
+console.log(verificaTodosProgramadores([fenipe, marilda]));
