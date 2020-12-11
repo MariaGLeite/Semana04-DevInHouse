@@ -11,3 +11,17 @@ function calculaMedia(notas) {
 }
 
 calculaMedia([10, 5]);
+
+// Atividade 02
+function elevaAoQuadradoLista(listaNumeros) {
+  var listaNumerosAoQuadrado = [];
+
+  for(var i = 0; i < listaNumeros.length; i++) {
+    listaNumerosAoQuadrado[i] = listaNumeros[i] * listaNumeros[i];
+  }
+
+  console.log(listaNumerosAoQuadrado);
+}
+
+
+elevaAoQuadradoLista([1, 2, 3, 4]);
