@@ -69,3 +69,11 @@ var fenipe = {
 
 console.log(verificaTodosProgramadores([jade, marilda]));
 console.log(verificaTodosProgramadores([fenipe, marilda]));
+
+// Atividade 05
+
+function retornaNomePessoas(pessoas) {
+  return pessoas.map(pessoa => pessoa.nome);
+}
+
+console.log(retornaNomePessoas([fenipe, marilda, jade, reiPrynce]));
