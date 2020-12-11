@@ -85,3 +85,12 @@ function retornaPessoasMenoresDeIdade(pessoas) {
 }
 
 console.log(retornaPessoasMenoresDeIdade([fenipe, marilda, jade, reiPrynce]));
+
+// Atividade 07
+
+function retornaPrimeiraPessoaMaiorDeIdade(pessoas) {
+  return pessoas.find(pessoa => pessoa.idade >= 18);
+}
+
+console.log(retornaPrimeiraPessoaMaiorDeIdade([fenipe, marilda, jade, reiPrynce]));
+console.log(retornaPrimeiraPessoaMaiorDeIdade([jade, reiPrynce, marilda, fenipe]));
