@@ -171,3 +171,11 @@ const city03 = {
 }
 
 console.log(filtraPorSantaCatarina([city01, city02, city03]));
+
+// Atividade 14
+
+function imprimeCidadesString(cidades) {
+  return cidades.map(cidade => `${cidade.nome} - ${cidade.estado}`);
+}
+
+console.log(imprimeCidadesString([city01, city02, city03]));
