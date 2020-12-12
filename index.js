@@ -135,3 +135,8 @@ async function retornaCasoPar(numero1, numero2) {
   console.log(await retornaCasoPar(1, 2));
 }
 )();
+
+// Atividade 11
+const calculaAreaRetangulo = (retangulo) => retangulo.largura * retangulo.altura;
+
+console.log(calculaAreaRetangulo({largura: 100, altura: 200}));
