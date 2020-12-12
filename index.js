@@ -193,3 +193,12 @@ const cityGaucha = {
 
 console.log(verificaPossuiCidadeGaucha([city01, city02, city03]));
 console.log(verificaPossuiCidadeGaucha([city01, city02, city03, cityGaucha]));
+
+// Atividade 16
+
+function destruturacaoObjetoCidade(cidade) {
+  const {nome, estado} = cidade;
+  console.log(`${nome} - ${estado}`);
+}
+
+destruturacaoObjetoCidade(city01);
