@@ -148,3 +148,26 @@ function formataEndereco(bairro, cidade, estado) {
 }
 
 formataEndereco("Monte Verde", "Florianópolis", "SC");
+
+// Atividade 13
+
+function filtraPorSantaCatarina(cidades) {
+  return cidades.filter(cidade => cidade.estado === "SC");
+}
+
+const city01 = {
+  nome: "Florianópolis",
+  estado: "SC"
+}
+
+const city02 = {
+  nome: "Maringá",
+  estado: "PA"
+}
+
+const city03 = {
+  nome: "Londrina",
+  estado: "PA"
+}
+
+console.log(filtraPorSantaCatarina([city01, city02, city03]));
