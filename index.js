@@ -179,3 +179,17 @@ function imprimeCidadesString(cidades) {
 }
 
 console.log(imprimeCidadesString([city01, city02, city03]));
+
+// Atividade 15
+
+function verificaPossuiCidadeGaucha(cidades) {
+  return cidades.find(cidade => cidade.estado === "RS") !== undefined;
+}
+
+const cityGaucha = {
+  nome: "Porto Alegre",
+  estado: "RS"
+}
+
+console.log(verificaPossuiCidadeGaucha([city01, city02, city03]));
+console.log(verificaPossuiCidadeGaucha([city01, city02, city03, cityGaucha]));
