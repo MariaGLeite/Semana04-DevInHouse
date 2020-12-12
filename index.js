@@ -111,3 +111,27 @@ const apresentacaoUsuario = (nome, idade) => {
 }
 
 apresentacaoUsuario("Maria", 20);
+
+// Atividade 10
+
+async function retornaCasoPar(numero1, numero2) {
+  try {
+    return await new Promise( (resolve, reject) => {
+      const soma = numero1 + numero2;
+
+      if(soma % 2 === 0) {
+        resolve(soma);
+      }
+
+      reject("O retorno não é par.");
+    });
+  } catch(e) {
+    return e;
+  }
+}
+
+(async () => {
+  console.log(await retornaCasoPar(2, 2));
+  console.log(await retornaCasoPar(1, 2));
+}
+)();
