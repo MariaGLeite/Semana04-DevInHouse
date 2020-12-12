@@ -140,3 +140,11 @@ async function retornaCasoPar(numero1, numero2) {
 const calculaAreaRetangulo = (retangulo) => retangulo.largura * retangulo.altura;
 
 console.log(calculaAreaRetangulo({largura: 100, altura: 200}));
+
+// Atividade 12
+
+function formataEndereco(bairro, cidade, estado) {
+  console.log(`${bairro}, ${cidade} - ${estado}`);
+}
+
+formataEndereco("Monte Verde", "Florianópolis", "SC");
