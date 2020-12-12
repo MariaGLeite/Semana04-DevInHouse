@@ -202,3 +202,15 @@ function destruturacaoObjetoCidade(cidade) {
 }
 
 destruturacaoObjetoCidade(city01);
+
+// Atividade 17
+
+function rankingLivros(livros) {
+  const [primeiroLugar, segundoLugar, terceiroLugar, ...demaisColocados] = livros;
+  console.log(`1º colocado: ${primeiroLugar}`);
+  console.log(`2º colocado: ${segundoLugar}`);
+  console.log(`3º colocado: ${terceiroLugar}`);
+  console.log(`Ademais colodados: ${demaisColocados}`);
+}
+
+console.log(rankingLivros(['TDD', 'Clean Code', 'Clean Architeture', 'Harry Poter', 'Dragonborn']));
